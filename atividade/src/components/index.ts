@@ -1,0 +1,8 @@
+export { default as Button } from './Button'
+export { default as ButtonText } from './ButtonText'
+export { default as ButtonDiario } from './ButtonDiario'
+export { default as ButtonAction } from './ButtonAction'
+export { default as ButtonAula } from './ButtonAula'
+export { default as Header } from './Header'
+export { default as Textos } from './Textos'
+export { default as Loading } from './Loading'
