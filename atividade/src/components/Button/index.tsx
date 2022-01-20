@@ -1,5 +1,4 @@
 import React from "react";
-import { registerRootComponent } from 'expo';
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import { ButtonProps } from "../../interfaces/Button.interface";
 import colors from "../../styles/colors";
@@ -18,12 +17,12 @@ export default function Button({ size, title, onPress, ...rest }: ButtonProps) {
 
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: colors.brown,
+    backgroundColor: colors.gray,
     borderRadius: 5,
     margin: 10,
   },
   buttonSize: {
-    backgroundColor: colors.brown,
+    backgroundColor: colors.gray,
     borderRadius: 5,
     margin: 10,
     width: 120,

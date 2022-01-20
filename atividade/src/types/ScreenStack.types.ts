@@ -18,10 +18,6 @@ export type LoginTypes = {
 export type DiarioStackParamList = {
   Home: undefined
   Diario: { id: number }
-  Castra: {
-    nome?: string
-    data?: string
-  }
   Texto: {
     id?: number
     nome?: string
@@ -32,7 +28,7 @@ export type DiarioStackParamList = {
   }
   CadastraDiario: {
     nome?: string
-    escricao?: string
+    data?: string
   }
 }
 type DiarioScreenNavigationProp = StackNavigationProp<DiarioStackParamList>

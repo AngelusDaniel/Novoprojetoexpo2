@@ -1,5 +1,4 @@
 import React from "react";
-import { registerRootComponent } from 'expo';
 import { StyleSheet, TouchableOpacity } from "react-native";
 import { ButtonProps } from "../../interfaces/Button.interface";
 import colors from "../../styles/colors";
@@ -22,6 +21,6 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     margin: 10,
     padding: 10,
-    backgroundColor: colors.brownLight,
+    backgroundColor: colors.gray,
   },
 });

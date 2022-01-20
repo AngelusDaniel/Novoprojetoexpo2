@@ -2,7 +2,6 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import LoginRoutes from "./login.routes";
 import HomeStack from "./home.routes";
-import { registerRootComponent } from 'expo';
 import { useAuth } from "../hook/auth";
 
 export default function Routes() {

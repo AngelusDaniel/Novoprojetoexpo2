@@ -8,14 +8,12 @@ class DiarioData {
     return api.get<IDiario>('/diario')
   }
   update(id: number, data: string) {
-    return api.put<IDiario>(`/diario/${id}`, { castracao: data })
+    return api.put<IDiario>(`/diario/${id}`)
   }
   show(id: number) {
     return api.get<ISpecificDiario>(`/diario/${id}`)
   }
-  deleteCastracao(id: number) {
-    return api.delete(`/castracao/${id}`)
-  }
+ 
 }
 
 export default new DiarioData();

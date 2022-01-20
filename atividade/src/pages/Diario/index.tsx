@@ -43,24 +43,7 @@ export default function Diario({ navigation }: DiarioTypes) {
       textos: { ...item },
     });
   }
-  async function castraRemove() {
-    console.log("Castra", { ...data });
-    try {
-      if (data) {
-        await fetchData();
-      }
-    } catch (error) {
-      const err = error as AxiosError;
-      const data = err.response?.data as IResponse;
-      let message = "";
-      if (data.data) {
-        for (const [key, value] of Object.entries(data.data)) {
-          message = `${message} ${value}`;
-        }
-      }
-      Alert.alert(`${data.message} ${message}`);
-    }
-  }
+
   const fetchData = useCallback(async () => {
     try {
       const response = await apiDiario.show(id);
@@ -124,7 +107,7 @@ export default function Diario({ navigation }: DiarioTypes) {
             <>
               <Header name={data.nome} image={data.imagem} />
               <Textos
-                title="Texto"
+                title="Textos"
                 onPress={handleTextoDiario}
                 buttonEdit={textoEdit}
                 buttonRemove={textoRemove}

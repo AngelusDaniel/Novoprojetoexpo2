@@ -1,5 +1,4 @@
 import React from "react";
-import { registerRootComponent } from 'expo';
 import { StyleSheet, TouchableOpacity, Text, Image } from "react-native";
 import { ButtonProps } from "../../interfaces/Button.interface";
 import colors from "../../styles/colors";
