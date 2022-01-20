@@ -31,7 +31,7 @@
       }
     },
     "android": {
-      "package": "com.cefetmg.adoptedanimal",
+      "package": "com.cefetmg.diarioonline",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
